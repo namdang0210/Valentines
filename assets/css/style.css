@@ -100,6 +100,12 @@
   padding-right: 30px;
 }
 
+#card p.signature {
+  text-align: right;
+  margin-top: 20px;
+  font-style: italic;
+}
+
 .side {
   background: #eee;
   height: 550px;
@@ -255,11 +261,13 @@ body {
   transform: translateY(-50px);
 }
 
-.side.one .fa-heart {
-  font-size: 8em;
-  color: red;
+.side.one .love-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
   animation: pulseHeart 1s ease-in-out infinite alternate;
   cursor: default;
+  filter: drop-shadow(0 4px 10px rgba(224, 25, 17, 0.3));
 }
 
 @keyframes pulseHeart {
@@ -267,7 +275,7 @@ body {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
